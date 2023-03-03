@@ -6,41 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <LinearLayout
-        android:layout_width="407dp"
-        android:layout_height="728dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="1dp">
+        >
 
         <TextView
             android:id="@+id/textViewCounter"
-            android:layout_width="241dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center" />
 
         <Button
-            android:id="@+id/textViewUp"
+            android:id="@+id/buttonUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="setOnClickListenerUp"
             android:text="UP" />
 
         <Button
-            android:id="@+id/textViewDown"
+            android:id="@+id/buttonDown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="setOnClickListenerDown"
             android:text="DOWN" />
+
+        <EditText
+            android:id="@+id/plainTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
